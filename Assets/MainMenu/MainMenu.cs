@@ -11,6 +11,14 @@ public class MainMenu : MonoBehaviour
         //TODO add games switching
     }
 
+    public void GoToSettingsMenu()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void QuitGame()
     {
         Application.Quit();
