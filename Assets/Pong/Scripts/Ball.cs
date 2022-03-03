@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
-    public Vector3 startPosition;
+    private Vector3 startPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +21,6 @@ public class Ball : MonoBehaviour
         Launch();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void Launch()
     {
         float x = Random.Range(0, 2) == 0 ? -1 : 1;
